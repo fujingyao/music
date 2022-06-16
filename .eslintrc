@@ -1,6 +1,7 @@
 {
     "extends": "@antfu",
     "rules": {
+        "no-console": "off",
         // ts 4空格
         "@typescript-eslint/indent": ["error", 4],
         // html 4空格
