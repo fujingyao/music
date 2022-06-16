@@ -23,10 +23,7 @@ const menu = reactive([
 ])
 
 const url = 'http://localhost:3000/song/url?id=33894312&proxy=http://121.196.226.246:84'
-
-fetch(url).then((res) => {
-    console.log('success', res)
-})
+const { isFetching, error, data } = await useFetch(url)
 </script>
 
 <template>
