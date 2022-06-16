@@ -1,0 +1,22 @@
+{
+    "extends": "@antfu",
+    "rules": {
+        // ts 4空格
+        "@typescript-eslint/indent": ["error", 4],
+        // html 4空格
+        "vue/html-indent": [
+            "error",
+            4
+        ],
+        // 组件允许关闭自身
+        "vue/html-self-closing": ["error", {
+            "html": {
+              "void": "always",
+              "normal": "always",
+              "component": "always"
+            },
+            "svg": "always",
+            "math": "always"
+          }]
+    }
+}
